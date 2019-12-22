@@ -35,7 +35,7 @@ end
   end
 
   def valid_move?(index)
-    return !position_taken?(index) && index > 0 && index < 9
+    index.between?(0,8) && !position_taken?(index)
   end
 
   def turn_count

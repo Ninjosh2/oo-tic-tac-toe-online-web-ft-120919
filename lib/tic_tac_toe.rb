@@ -1,7 +1,4 @@
-require 'pry'
-require_relative '../lib/tic_tac_toe.rb'
-gra = TicTacToe.new
-gra.play
+
 
 class TicTacToe
   WIN_COMBINATIONS = [

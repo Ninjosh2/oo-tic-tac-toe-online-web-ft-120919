@@ -22,20 +22,15 @@ WIN_COMBINATIONS = [
     puts "-----------"
     puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
   end
-  
-  # input_index
-  
+ 
   def input_to_index(user_input)
     user_input.to_i - 1
   end
   
-  # move: Note that we deleted the boar arguement, and added @ to board.  For instance, #move was move(board, position, char), but now board is intialized, so it is a characteristic of TicTacToe, no need to have it as an argument.  So, #move became simply move(position, char).
-  
-  
   def move(position, char)
     @board[position] = char
   end
-# For #move to work, we need to position_taken and valid_move
+
   def position_taken?(index_i)
     ((@board[index_i] == "X") || (@board[index_i] == "O"))
   end

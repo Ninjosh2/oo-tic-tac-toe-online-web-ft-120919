@@ -1,6 +1,3 @@
-gra = TicTacToe.new
-gra.play
-
 
 
 class TicTacToe

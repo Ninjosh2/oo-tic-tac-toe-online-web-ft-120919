@@ -34,9 +34,7 @@ end
     !(@board[index] == " " || @board[index] == "" || @board[index] == nil)
   end
 
-  def valid_move?(index)
-    return !position_taken?(index) && index > 0 && index < 9
-  end
+  def valid_move?(board, index)
 
   def turn_count
     counter = 0

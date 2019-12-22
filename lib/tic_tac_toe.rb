@@ -35,6 +35,7 @@ end
   end
 
   def valid_move?(board, index)
+    taken?(board,index) == false && index.between?(0,8) == true return true
 
   def turn_count
     counter = 0

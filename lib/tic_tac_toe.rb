@@ -34,10 +34,8 @@ end
     !(@board[index] == " " || @board[index] == "" || @board[index] == nil)
   end
 
-  def valid_move?(board, index)
-    taken?(board,index) == false && index.between?(0,8) == true return true
-    elsif position_taken?(board, index) == true return false elsif index.between?(0, 8) == false return false 
-    end 
+  def valid_move?(index)
+    return !position_taken?(index) && index > 0 && index < 9
   end
 
   def turn_count
